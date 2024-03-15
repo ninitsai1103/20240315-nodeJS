@@ -18,7 +18,6 @@ const app = express();
 
 // create application/json parser
 // 解析form元素表單
-// extend為解析多層物件\
 // 下面是路由middleware寫法
 // const jsonParser = bodyParser.json()
 // bodyParser被express買走了

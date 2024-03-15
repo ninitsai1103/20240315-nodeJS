@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+    <title>上傳檔案表單</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <h1>單一檔案上傳</h1>
+        <form action="/upload1" method="post" enctype="multipart/form-data">
+            <div class="input-group mb-2">
+                <span class="input-group-text">名稱</span>
+                <input type="text" class="form-control" name="account">
+            </div>
+            <div class="input-group mb-2">
+                <span class="input-group-text">密碼</span>
+                <input type="password" class="form-control" name="password">
+            </div>
+            <div class="input-group mb-2">
+                <input type="file" class="form-control" name="myFile">
+            </div>
+            <div class="d-flex">
+                <button type="submit" class="btn btn-primary ms-auto">送出</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

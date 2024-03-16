@@ -4,10 +4,10 @@ import {resolve} from "path";
 const __dirname = import.meta.dirname
 
 let user;
-user = {
-    name: "Ruby Gonzalez",
-    img: "https://randomuser.me/api/portraits/women/12.jpg",
-}
+// user = {
+//     name: "Ruby Gonzalez",
+//     img: "https://randomuser.me/api/portraits/women/12.jpg",
+// }
 
 // if (user){
 //     console.log(`
@@ -28,7 +28,7 @@ user = {
 // `, {user})
 
 const template = readFileSync(resolve(__dirname, "template03.html")).toString();
-const result = ejs.render(template)
+const result = ejs.render(template, {user})
 
 
 console.log(result);

@@ -12,7 +12,7 @@ app.use("/bs", express.static(resolve(__dirname, "node_modules/bootstrap/dist"))
 app.use("/jq", express.static(resolve(__dirname, "node_modules/jquery/dist")));
 
 app.get("/", (req, res) => {
-    // console.log("首頁");
+    res.send("首頁");
 })
 
 app.get("/test1", (req, res) => {
